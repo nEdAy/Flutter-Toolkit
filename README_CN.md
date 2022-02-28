@@ -5,12 +5,13 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/14442-flutter-toolkit.svg)](https://plugins.jetbrains.com/plugin/14442-flutter-toolkit)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/14442-flutter-toolkit.svg)](https://plugins.jetbrains.com/plugin/14442-flutter-toolkit)
 
-## [中文文档](https://github.com/nEdAy/Flutter-Toolkit/blob/master/README_CN.md)
+## [English Document](https://github.com/nEdAy/Flutter-Toolkit/blob/main/README.md)
 
-<!-- Plugin description -->
-A plugin for Android Studio that speeds up your day-to-day flutter development.
+一个Android Studio的插件(IntelliJ IDEA)，加速你的日常Flutter开发。 Flutter build_runner 助手，使执行build_runner命令更简单。
 
-Flutter Build Runner Helper, to make it easier to execute build_runner commands.
+> **如果你觉得这个工具对你有用，随手给个 Star，让我知道它是对你有帮助的，我会继续更新和维护它。**
+
+## 功能
 
 Adds the following build_runner commands to Android Studio:
 
@@ -27,9 +28,7 @@ There are two basic ways to invoke a command:
 - Click the action button in the Toolbar.
 - Use the shortcut key.
 
-<!-- Plugin description end -->
-
-## Installation
+## 安装
 
 - Using IDE built-in plugin system:
 
@@ -58,8 +57,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
----
-Plugin based on the [IntelliJ Platform Plugin Template][template].
-
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
