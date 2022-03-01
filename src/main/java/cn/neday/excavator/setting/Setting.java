@@ -25,7 +25,7 @@ public class Setting implements Configurable {
     @Nls(capitalization = Nls.Capitalization.Title)
     @Override
     public String getDisplayName() {
-        return "Flutter Build Runner Helper";
+        return "Flutter ToolKit";
     }
 
     @Override
