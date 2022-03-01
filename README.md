@@ -10,7 +10,7 @@
 <!-- Plugin description -->
 A plugin for Android Studio that speeds up your day-to-day flutter development.
 
-Flutter Build Runner Helper, to make it easier to execute build_runner commands.
+Flutter ToolKit(Flutter Build Runner Helper), to make it easier to execute build_runner commands.
 
 Adds the following build_runner commands to Android Studio:
 
