@@ -18,6 +18,10 @@
         </toolWindow>
     </extensions>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Flutter ToolKit Notification" displayType="BALLOON"/>
+    </extensions>
+
     <actions>
         <!-- Add your actions here -->
         <action id="cn.neday.excavator.action.kill.KillGradleAction"
