@@ -15,7 +15,7 @@ abstract class BaseAnAction : AnAction() {
     override fun update(event: AnActionEvent) {
         project = event.getData(PlatformDataKeys.PROJECT)
         val projectPath = project?.basePath
-        event.presentation.isEnabledAndVisible = ProjectChecker().check(projectPath)
+        event.presentation.isEnabledAndVisible = ProjectChecker().check(projectPath).isOk
     }
 
     protected fun isWindowsOS(): Boolean {

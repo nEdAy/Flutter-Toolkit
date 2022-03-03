@@ -1,6 +1,7 @@
 package cn.neday.excavator.action.generation
 
 import cn.neday.excavator.action.BaseAnAction
+import cn.neday.excavator.checker.ICheck
 import cn.neday.excavator.checker.ProjectChecker
 import cn.neday.excavator.setting.Setting.FLUTTER_PATH_KEY
 import com.intellij.ide.util.PropertiesComponent
@@ -32,7 +33,7 @@ abstract class BaseGenerationAnAction : BaseAnAction() {
     override fun update(event: AnActionEvent) {
         val project = event.getData(PlatformDataKeys.PROJECT)
         val projectPath = project?.basePath
-        event.presentation.isEnabledAndVisible = ProjectChecker().check(projectPath)
+        event.presentation.isEnabledAndVisible = ProjectChecker().check(projectPath).isOk
     }
 
     override fun actionPerformed(event: AnActionEvent) {
@@ -50,8 +51,18 @@ abstract class BaseGenerationAnAction : BaseAnAction() {
                 propertiesComponent.setValue(FLUTTER_PATH_KEY, flutterPath)
             }
             val projectPath = project.basePath
-            if (!ProjectChecker().check(projectPath)) {
-                showErrorMessage("Current directory does not seem to be a valid Flutter project directory.")
+            val result: ICheck.CheckResult = ProjectChecker().check(projectPath)
+            if (!result.isOk) {
+                val stringBuilder = StringBuilder()
+                for (file in result.missingFiles) {
+                    stringBuilder.append(file).append("\n")
+                }
+                showErrorMessage(
+                    """
+                    Current directory does not seem to be a valid Flutter project directory. Files not found:
+                    $stringBuilder
+                    """.trimIndent()
+                )
             } else {
                 projectPath?.let { execCommand(project, flutterPath, it) }
             }

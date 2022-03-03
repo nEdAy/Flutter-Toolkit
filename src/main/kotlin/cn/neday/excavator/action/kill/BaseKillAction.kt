@@ -16,7 +16,7 @@ abstract class BaseKillAction : BaseAnAction() {
     override fun update(event: AnActionEvent) {
         val project = event.getData(PlatformDataKeys.PROJECT)
         val projectPath = project?.basePath
-        event.presentation.isEnabledAndVisible = ProjectChecker().check(projectPath)
+        event.presentation.isEnabledAndVisible = ProjectChecker().check(projectPath).isOk
     }
 
     override fun actionPerformed(event: AnActionEvent) {

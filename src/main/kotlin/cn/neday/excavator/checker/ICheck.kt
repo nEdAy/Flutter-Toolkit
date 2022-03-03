@@ -7,5 +7,10 @@ interface ICheck {
      * @param path 待检查路径
      * @return 校验结果，true 为 通过
      */
-    fun check(path: String?): Boolean
+    fun check(path: String?): CheckResult
+
+    class CheckResult {
+        var isOk = false
+        val missingFiles: MutableList<String> = ArrayList()
+    }
 }
