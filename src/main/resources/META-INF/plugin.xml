@@ -38,6 +38,12 @@
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt alt K"/>
         </action>
+        <action id="cn.neday.excavator.action.generation.AnalyzeAction"
+                class="cn.neday.excavator.action.generation.AnalyzeAction" text="Flutter Analyze"
+                description="Invoked 'flutter analyze'" icon="/icons/ic_analyze.svg">
+            <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt A"/>
+        </action>
         <action id="cn.neday.excavator.action.generation.BuildAction"
                 class="cn.neday.excavator.action.generation.BuildAction" text="Build Runner Build"
                 description="Invoked 'flutter packages pub run build_runner build'" icon="/icons/ic_build.svg">

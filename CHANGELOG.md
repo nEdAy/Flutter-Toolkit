@@ -4,17 +4,28 @@
 
 ## [Unreleased]
 
-## [2.0.0]
+- Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
+- Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
 
-### Added
+## [2.2.0]
 
-- Initial scaffold created
-  from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+### Changed
+
+- Modify the toolWindow icon. (support dark mode)
+- Show files not found in the list when the current directory does not seem to have a valid Flutter project directory.
+- Provide a new action called 'Flutter Analyze', click it to execute 'flutter analyze'.
 
 ## [2.1.0]
 
 ### Changed
 
 - Modify plugin name
-- Modify action icon
+- Modify the action icon
 - Use notification instead of dialog
+
+## [2.0.0]
+
+### Added
+
+- Initial scaffold created
+  from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)

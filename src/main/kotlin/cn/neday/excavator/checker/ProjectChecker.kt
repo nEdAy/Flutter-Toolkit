@@ -6,8 +6,7 @@ import java.util.*
 class ProjectChecker : ICheck {
 
     private var checkFiles: ArrayList<String> =
-        arrayListOf("lib", ".metadata", ".packages", "pubspec.lock", "pubspec.yaml")
-
+        arrayListOf("lib", "pubspec.yaml")
     override fun check(path: String?): ICheck.CheckResult {
         val result = ICheck.CheckResult()
         if (path == null || path.isEmpty()) {
