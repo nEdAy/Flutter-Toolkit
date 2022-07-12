@@ -19,7 +19,7 @@ abstract class BaseAnAction : AnAction() {
     }
 
     protected fun isWindowsOS(): Boolean {
-        return System.getProperty("os.name").toLowerCase().startsWith("windows")
+        return System.getProperty("os.name").lowercase().startsWith("windows")
     }
 
     protected fun showInfo(message: String) {

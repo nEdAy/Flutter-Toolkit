@@ -72,7 +72,7 @@ abstract class BaseGenerationAnAction : BaseAnAction() {
     private fun chooseFlutterPath(project: Project, flutterName: String): String {
         val descriptor = FileChooserDescriptorFactory.createSingleFileDescriptor()
             .withFileFilter { virtualFile ->
-                val name = virtualFile.name.toLowerCase()
+                val name = virtualFile.name.lowercase()
                 name == flutterName
             }
         val selectedFile = FileChooser.chooseFiles(descriptor, project, null)
