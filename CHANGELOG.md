@@ -6,6 +6,13 @@
 
 - Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
 - Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
+-
+
+## [2.2.1]
+
+### Added
+
+- Add AnalyzeAction and RebuildAction to 'GenerateGroup', 'EditMenu', 'EditorPopupMenu'.
 
 ## [2.2.0]
 

@@ -43,6 +43,10 @@
                 description="Invoked 'flutter analyze'" icon="/icons/ic_analyze.svg">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt A"/>
+
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+            <add-to-group group-id="EditMenu" anchor="first"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
         <action id="cn.neday.excavator.action.generation.BuildAction"
                 class="cn.neday.excavator.action.generation.BuildAction" text="Build Runner Build"
@@ -57,6 +61,10 @@
                 icon="/icons/ic_rebuild.svg">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt R"/>
+
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+            <add-to-group group-id="EditMenu" anchor="first"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
         <action id="cn.neday.excavator.action.generation.WatchAction"
                 class="cn.neday.excavator.action.generation.WatchAction" text="Build Runner Watch"
