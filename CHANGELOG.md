@@ -6,7 +6,14 @@
 
 - Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
 - Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
--
+
+## [2.2.2]
+
+### Changed
+
+- Try use 'org.jetbrains.plugins.terminal'.
+- Supported 'Android Studio Dolphin | 2021.3.1'.
+- Remove steps that require manual selection of the Flutter SDK path.
 
 ## [2.2.1]
 

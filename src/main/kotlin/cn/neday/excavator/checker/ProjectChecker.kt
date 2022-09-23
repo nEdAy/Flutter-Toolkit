@@ -7,6 +7,7 @@ class ProjectChecker : ICheck {
 
     private var checkFiles: ArrayList<String> =
         arrayListOf("lib", "pubspec.yaml")
+
     override fun check(path: String?): ICheck.CheckResult {
         val result = ICheck.CheckResult()
         if (path == null || path.isEmpty()) {

@@ -18,14 +18,17 @@ Adds the following build_runner commands to Android Studio:
 - Kill Gradle: Kill Gradle if a current task is running
 - Kill Flutter: Kill Flutter if a current task is running
 
-- Build: flutter packages pub run build_runner build
-- Rebuild: flutter packages pub run build_runner build --delete-conflicting-outputs
-- Watch: flutter packages pub run build_runner watch
-- Clean: flutter packages pub run build_runner clean
+- Analyze: flutter analyze
+- Build: flutter pub run build_runner build
+- Rebuild: flutter pub run build_runner build --delete-conflicting-outputs
+- Watch: flutter pub run build_runner watch
+- Clean: flutter pub run build_runner clean
 
 There are two basic ways to invoke a command:
 
 - Click the action button in the Toolbar.
+- Open the dart entity class file, right-click the mouse, or just use the shortcut key: `Control+Enter` (
+  Windows:`Alt+Insert`), You can click the action options.
 - Use the shortcut key.
 
 ## 安装
