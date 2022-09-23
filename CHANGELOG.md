@@ -7,6 +7,12 @@
 - Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
 - Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
 
+## [2.3.0]
+
+### Changed
+
+- Compatibility Range is 203 - *
+
 ## [2.2.2]
 
 ### Changed
