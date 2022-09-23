@@ -11,7 +11,7 @@
 
 ### Changed
 
-- Compatibility Range is 203 - *
+- Compatibility Range is 212(2021.2) - 213.*
 
 ## [2.2.2]
 
