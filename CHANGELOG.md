@@ -7,6 +7,12 @@
 - Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
 - Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
 
+## [2.4.0]
+
+### Changed
+
+- Provide a new action called 'Flutter Pub Get', click it to execute 'flutter pub get'.
+
 ## [2.3.0]
 
 ### Changed

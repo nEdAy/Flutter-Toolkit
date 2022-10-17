@@ -49,7 +49,7 @@
         <action id="cn.neday.excavator.action.generation.RebuildAction"
                 class="cn.neday.excavator.action.generation.RebuildAction"
                 text="Build Runner Rebuild"
-                description="Invoked 'flutter flutter pub run build_runner build --delete-conflicting-outputs'"
+                description="Invoked 'flutter pub run build_runner build --delete-conflicting-outputs'"
                 icon="/icons/ic_rebuild.svg">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt R"/>
@@ -60,15 +60,25 @@
         </action>
         <action id="cn.neday.excavator.action.generation.WatchAction"
                 class="cn.neday.excavator.action.generation.WatchAction" text="Build Runner Watch"
-                description="Invoked 'flutter flutter pub run build_runner watch'" icon="/icons/ic_watch.svg">
+                description="Invoked 'flutter pub run build_runner watch'" icon="/icons/ic_watch.svg">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt W"/>
         </action>
         <action id="cn.neday.excavator.action.generation.CleanAction"
                 class="cn.neday.excavator.action.generation.CleanAction" text="Build Runner Clean"
-                description="Invoked 'flutter flutter pub run build_runner clean'" icon="/icons/ic_clean.svg">
+                description="Invoked 'flutter pub run build_runner clean'" icon="/icons/ic_clean.svg">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt C"/>
+        </action>
+        <action id="cn.neday.excavator.action.generation.PubGetAction"
+                class="cn.neday.excavator.action.generation.PubGetAction" text="Flutter Pub Get"
+                description="Invoked 'flutter pub get'" icon="/icons/ic_pub_get.svg">
+            <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt G"/>
+
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+            <add-to-group group-id="EditMenu" anchor="first"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
 </idea-plugin>
