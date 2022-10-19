@@ -2,10 +2,11 @@
 
 # Flutter-Toolkit Changelog
 
-## [Unreleased]
+## [2.4.1]
 
-- Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
-- Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
+### Changed
+
+- Adjust the order of Actions in GenerateGroup', 'EditMenu', 'EditorPopupMenu'.
 
 ## [2.4.0]
 
