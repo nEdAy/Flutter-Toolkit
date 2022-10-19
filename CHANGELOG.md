@@ -2,6 +2,11 @@
 
 # Flutter-Toolkit Changelog
 
+## [Unreleased]
+
+- Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
+- Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
+
 ## [2.4.1]
 
 ### Changed
