@@ -7,6 +7,17 @@
 
 ## [中文文档](https://github.com/nEdAy/Flutter-Toolkit/blob/master/README_CN.md)
 
+<table cellspacing="0" cellpadding="0" style="border: none">
+  <tr>
+    <td>
+      <img width="256" height="160" src="https://user-images.githubusercontent.com/10076735/201303574-858a53b4-d76d-49ff-808e-f1dc9353bcf1.png"/>
+    </td>
+    <td>
+      <img width="256" height="160" src="https://user-images.githubusercontent.com/10076735/201303608-684153a6-adc8-470b-b02b-ec582759d5b3.png"/>
+    </td>
+  </tr> 
+</table>
+
 <!-- Plugin description -->
 A plugin for Android Studio that speeds up your day-to-day flutter development.
 
