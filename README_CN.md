@@ -30,6 +30,8 @@ Adds the following build_runner commands to Android Studio:
 - Kill Flutter: Kill Flutter if a current task is running
 
 - Analyze: flutter analyze
+- Pub get: flutter pub get
+
 - Build: flutter pub run build_runner build
 - Rebuild: flutter pub run build_runner build --delete-conflicting-outputs
 - Watch: flutter pub run build_runner watch
