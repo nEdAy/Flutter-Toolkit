@@ -19,7 +19,7 @@
 </table>
 
 <!-- Plugin description -->
-A plugin for Android Studio that speeds up your day-to-day flutter development.
+An advanced Android Studio plugin designed to enhance and streamline your daily Flutter development workflow.
 
 Flutter ToolKit(Flutter Build Runner Helper), to make it easier to execute build_runner commands.
 
