@@ -6,6 +6,14 @@
 
 - Add a new switch to control whether run 'watch' with '--delete-conflicting-outputs' option.
 - Add a new switch to control whether run 'flutter analyze' automatically after build-runner is done.
+- Try to support use the build runner with "--build-filter="path/to/output" to rebuild a single file.
+
+## [2.4.3]
+
+### Changed
+
+- Template synchronization: intellij-platform-plugin-template.
+- Compatibility Range changed from 212~222.* to 213.223.*.
 
 ## [2.4.1]
 
