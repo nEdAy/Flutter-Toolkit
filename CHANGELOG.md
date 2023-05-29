@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+## [2.4.4]
+
+### Changed
+
+- Use dart command instead of flutter for code generation
+
 ## [2.4.3]
 
 ### Changed
