@@ -25,28 +25,29 @@ abstract class BaseGenerationAnAction : BaseAnAction() {
     override fun actionPerformed(event: AnActionEvent) {
         event.project?.let { project ->
             project.basePath?.let { projectPath ->
-                execCommand(project, projectPath)
+                // Use default command
+                execCommand(project, projectPath, command)
             } ?: showErrorMessage("Current directory does not seem to be a project directory.")
         } ?: showErrorMessage("Current directory does not seem to be a project directory.")
     }
 
-    private fun execCommand(project: Project, projectPath: String) {
+    fun execCommand(project: Project, projectPath: String, command: String) {
+        // Check terminal exists
         val terminalView = TerminalView.getInstance(project)
-        val window = ToolWindowManager.getInstance(project)
-            .getToolWindow(TerminalToolWindowFactory.TOOL_WINDOW_ID)
+        val window = ToolWindowManager.getInstance(project).getToolWindow(TerminalToolWindowFactory.TOOL_WINDOW_ID)
         if (window == null) {
             showErrorMessage("Please check that the following plugins are installed: Terminal")
             return
         }
+
+        // Close existing flutter toolkit
         val terminalName = "Flutter-Toolkit"
         val content = window.contentManager.findContent(terminalName)
         if (content != null) {
             terminalView.closeTab(content)
         }
-        val localTerminal = window.contentManager.findContent("Local")
-        if (localTerminal != null) {
-            terminalView.closeTab(localTerminal)
-        }
+
+        // Start new terminal
         try {
             val terminalWidget: ShellTerminalWidget = terminalView.createLocalShellWidget(projectPath, terminalName)
             terminalWidget.executeCommand(command)
