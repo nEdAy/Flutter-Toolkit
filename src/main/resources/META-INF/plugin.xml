@@ -83,5 +83,10 @@
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt C"/>
         </action>
+        <action id="cn.neday.excavator.action.generation.PartialBuildAction"
+                class="cn.neday.excavator.action.generation.PartialBuildAction" text="Run Partial Build Runner"
+                description="Invoked 'flutter flutter pub run build_runner build' with build filter" icon="/icons/ic_build.svg">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
