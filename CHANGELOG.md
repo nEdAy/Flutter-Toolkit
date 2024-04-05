@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+### Changed
+
+## [2.4.6]
+
+- Add partial build runner action by @myxzlpltk in #17
+
+## [2.4.5]
+
+- Update version to 2.4.5 and support latest IntelliJ by @aldee in #16
+
 ## [2.4.4]
 
 ### Changed
