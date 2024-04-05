@@ -4,8 +4,6 @@
 
 ## [Unreleased]
 
-### Changed
-
 ## [2.4.6]
 
 - Add partial build runner action by @myxzlpltk in #17
@@ -68,6 +66,7 @@
 ## [2.2.0]
 
 ### Changed
+
 - Modify the toolWindow icon. (support dark mode)
 - Show files not found in the list when the current directory does not seem to have a valid Flutter project directory.
 - Provide a new action called `Flutter Analyze`, click it to execute `flutter analyze`.
@@ -75,6 +74,7 @@
 ## [2.1.0]
 
 ### Changed
+
 - Modify plugin name
 - Modify the action icon
 - Use notification instead of dialog
@@ -86,24 +86,17 @@
 - Initial scaffold created
   from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
 
-[Unreleased]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.3...HEAD
-
+[Unreleased]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.6...HEAD
+[2.4.6]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.5...v2.4.6
+[2.4.5]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.4...v2.4.5
+[2.4.4]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.3...v2.4.4
 [2.4.3]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.2...v2.4.3
-
 [2.4.2]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.1...v2.4.2
-
 [2.4.1]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.0...v2.4.1
-
 [2.4.0]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.3.0...v2.4.0
-
 [2.3.0]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.2.2...v2.3.0
-
 [2.2.2]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.2.1...v2.2.2
-
 [2.2.1]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.2.0...v2.2.1
-
 [2.2.0]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.1.0...v2.2.0
-
 [2.1.0]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.0.0...v2.1.0
-
 [2.0.0]: https://github.com/nEdAy/Flutter-Toolkit/commits/v2.0.0
