@@ -5,30 +5,22 @@ import java.util.*
 
 class ProjectChecker : ICheck {
 
-    private var checkFiles: ArrayList<String> =
+    private var normalDartProjectFiles: ArrayList<String> =
         arrayListOf("lib", "pubspec.yaml")
+    private var melosDartProjectFiles: ArrayList<String> =
+        arrayListOf("package", "melos.yaml")
 
     override fun check(path: String?): ICheck.CheckResult {
         val result = ICheck.CheckResult()
-        if (path == null || path.isEmpty()) {
+        if (path.isNullOrEmpty()) {
             return result
         }
         val dir = File(path)
         if (!dir.exists() || !dir.isDirectory) {
             return result
         }
-        val files = Objects.requireNonNull(dir.list())
-        var count = 0
-        val missingFiles = ArrayList(checkFiles)
-        for (file in files) {
-            if (checkFiles.contains(file)) {
-                count++
-                missingFiles.remove(file)
-            }
-        }
-
-        result.isOk = count == checkFiles.size
-        result.missingFiles.addAll(missingFiles)
+        val files = Objects.requireNonNull(dir.list()).asList()
+        result.isOk = files.containsAll(normalDartProjectFiles) || files.containsAll(melosDartProjectFiles)
         return result
     }
 }

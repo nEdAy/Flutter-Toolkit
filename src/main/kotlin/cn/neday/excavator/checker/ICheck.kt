@@ -11,6 +11,5 @@ interface ICheck {
 
     class CheckResult {
         var isOk = false
-        val missingFiles: MutableList<String> = ArrayList()
     }
 }

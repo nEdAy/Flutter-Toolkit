@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+## [2.4.7]
+
+- Update plugin version to 2.4.7 and platform until build to 233. by @dhruvanbhalara in #21
+- Support multi-package dart projects managed by Melos
+
 ## [2.4.6]
 
 - Add partial build runner action by @myxzlpltk in #17
