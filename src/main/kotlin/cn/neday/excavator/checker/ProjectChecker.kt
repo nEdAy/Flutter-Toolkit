@@ -8,7 +8,7 @@ class ProjectChecker : ICheck {
     private var normalDartProjectFiles: ArrayList<String> =
         arrayListOf("lib", "pubspec.yaml")
     private var melosDartProjectFiles: ArrayList<String> =
-        arrayListOf("package", "melos.yaml")
+        arrayListOf("packages", "melos.yaml")
 
     override fun check(path: String?): ICheck.CheckResult {
         val result = ICheck.CheckResult()
