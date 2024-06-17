@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [2.4.8]
+
+- Remove upper limit for IntelliJ Platform version. by @dhruvanbhalara in #25
+
 ## [2.4.7]
 
 - Update plugin version to 2.4.7 and platform until build to 233. by @dhruvanbhalara in #21
