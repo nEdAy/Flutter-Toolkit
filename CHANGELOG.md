@@ -95,7 +95,8 @@
 - Initial scaffold created
   from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
 
-[Unreleased]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.7...HEAD
+[Unreleased]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.8...HEAD
+[2.4.8]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.7...v2.4.8
 [2.4.7]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.6...v2.4.7
 [2.4.6]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.5...v2.4.6
 [2.4.5]: https://github.com/nEdAy/Flutter-Toolkit/compare/v2.4.4...v2.4.5
